@@ -6,11 +6,11 @@ MedSegment is a Machine Learning-powered healthcare analytics platform built wit
 
 The platform helps healthcare providers:
 
-✅ Identify high-risk patients
-✅ Reduce hospital readmissions
-✅ Personalize treatment plans
-✅ Improve resource allocation
-✅ Support data-driven clinical decision-making
+* ✅ Identify high-risk patients
+* ✅ Reduce hospital readmissions
+* ✅ Personalize treatment plans
+* ✅ Improve resource allocation
+* ✅ Support data-driven clinical decision-making
 
 ---
 
