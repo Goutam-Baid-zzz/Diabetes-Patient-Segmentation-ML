@@ -2,6 +2,9 @@
 
 > 🚑 Transforming healthcare data into actionable clinical insights through Machine Learning.
 
+🌐 **Live Application:**  
+👉 https://diabetes-patient-segmentation-ml.streamlit.app/
+
 MedSegment is a Machine Learning-powered healthcare analytics platform built with **Streamlit** that segments diabetic patients into clinically meaningful cohorts using **K-Means Clustering**. The project leverages the **Diabetes 130-US Hospitals Dataset** from the UCI Machine Learning Repository to identify patient groups based on hospitalization patterns, disease complexity, medication usage, and readmission behavior.
 
 The platform helps healthcare providers:
