@@ -4,3 +4,6 @@ scikit-learn
 joblib
 streamlit
 plotly
+matplotlib
+seaborn
+scipy
