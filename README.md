@@ -37,9 +37,9 @@ https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999
 
 ---
 
-# ✨ Key Features
+## ✨ Key Features
 
-## 👤 Interactive Patient Analysis
+### 👤 Interactive Patient Analysis
 
 * Random patient selection from dataset
 * Real-time cluster prediction
@@ -48,7 +48,7 @@ https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999
 * Explainable AI insights
 * Clinical reasoning behind classification
 
-## 🩺 Clinical Care Recommendations
+### 🩺 Clinical Care Recommendations
 
 * Personalized care plans
 * Follow-up recommendations
@@ -56,16 +56,16 @@ https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999
 * Preventive intervention guidance
 * Risk mitigation strategies
 
-## 📈 Interactive Visual Analytics
+### 📊 Interactive Visual Analytics
 
-* 📊 Radar Charts
-* 🌐 3D Cluster Visualizations
-* 🍩 Donut Charts
-* 📉 Trend Analysis
-* 📋 Cohort Comparison Dashboards
-* 🎯 Population Distribution Insights
+* Radar Charts
+* 3D Cluster Visualizations
+* Donut Charts
+* Trend Analysis
+* Cohort Comparison Dashboards
+* Population Distribution Insights
 
-## 🏢 Executive Dashboard
+### 🏢 Executive Dashboard
 
 * Healthcare KPIs
 * Readmission Analytics
@@ -79,11 +79,46 @@ https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999
 
 The K-Means model groups patients into three clinically meaningful cohorts.
 
-| Cluster      | Cohort                            | Risk Level | Description                                                                          |
-| ------------ | --------------------------------- | ---------- | ------------------------------------------------------------------------------------ |
-| 🟡 Cluster 0 | Moderate Complexity – Renal Focus | Moderate   | Patients with higher medication intensity and renal-related complications.           |
-| 🟢 Cluster 1 | Stable & Controlled               | Low        | Patients with lower complexity, fewer medications, and minimal hospital utilization. |
-| 🔴 Cluster 2 | Frequent Hospitalization          | High       | Patients with repeated admissions, emergency visits, and elevated readmission risk.  |
+| Cluster      | Cohort                      | Risk Level | Description |
+| ------------ | --------------------------- | ---------- | ----------- |
+| 🟡 Cluster 0 | High Complexity Chronic Care | Moderate | Patients with the highest medication burden and complexity scores, requiring continuous disease management and monitoring. |
+| 🟢 Cluster 1 | Stable & Controlled | Low | Patients with lower complexity, fewer medications, minimal healthcare utilization, and lower readmission risk. |
+| 🔴 Cluster 2 | Frequent Hospitalization | High | Patients with significantly higher healthcare utilization, repeated admissions, and the highest observed readmission rates. |
+---
+
+# 📊 Clinical Interpretation of Patient Segments
+
+The identified patient cohorts demonstrate meaningful differences in healthcare utilization, medication burden, disease complexity, and readmission behavior.
+
+| Metric | Cluster 0 | Cluster 1 | Cluster 2 |
+|----------|----------:|----------:|----------:|
+| Avg Total Recent Visits | 0.77 | 0.62 | 6.55 |
+| Avg Medications | 23.00 | 12.23 | 17.09 |
+| Readmission Rate (%) | 47.17 | 41.53 | 72.61 |
+| Avg Complexity Score | 33.01 | 18.76 | 23.86 |
+
+### 🟢 Cluster 1 – Stable & Controlled
+
+- Lowest disease complexity
+- Lowest medication burden
+- Lowest healthcare utilization
+- Lowest readmission rate
+
+### 🟡 Cluster 0 – High Complexity Chronic Care
+
+- Highest medication burden
+- Highest patient complexity score
+- Moderate readmission risk
+- Requires continuous disease management
+
+### 🔴 Cluster 2 – Frequent Hospitalization
+
+- Extremely high healthcare utilization
+- Highest readmission rate
+- Elevated disease burden
+- Highest-priority intervention cohort
+
+These findings suggest that different patient populations require different care management strategies and monitoring approaches 
 
 ---
 
@@ -171,26 +206,18 @@ MedSegment/
 
 # 🛠️ Technology Stack
 
-### 💻 Programming & Analytics
+| Category                         | Technologies                                                           |
+| -------------------------------- | ---------------------------------------------------------------------- |
+| 💻 Programming & Analytics       | Python, Pandas, NumPy                                                  |
+| 🤖 Machine Learning              | Scikit-Learn, K-Means Clustering, StandardScaler                       |
+| 📊 Data Visualization            | Plotly, Matplotlib, Seaborn                                            |
+| 🎨 Dashboard Development         | Streamlit                                                              |
+| 📦 Model Persistence & Utilities | Joblib                                                                 |
+| 📈 Dimensionality Reduction      | PCA (Principal Component Analysis)                                     |
+| 🔍 Model Evaluation              | Elbow Method, Silhouette Analysis                                      |
+| 🚀 Deployment                    | Streamlit Community Cloud                                              |
+| 🏥 Domain                        | Healthcare Analytics, Patient Segmentation, Population Health Analysis |
 
-* Python
-* Pandas
-* NumPy
-
-### 🤖 Machine Learning
-
-* Scikit-Learn
-* K-Means Clustering
-* StandardScaler
-
-### 📊 Visualization
-
-* Plotly
-* Streamlit
-
-### 📦 Utilities
-
-* Joblib
 
 ---
 
@@ -265,13 +292,13 @@ diabetic_data_with_clusters.csv
 
 # 🚀 Future Enhancements
 
-* 🔮 Readmission Risk Prediction Model
-* 🤖 Advanced Explainable AI Module
+* 🔍 Advanced Cluster Explainability
+* 📊 Comparative Clustering (DBSCAN, Hierarchical Clustering, Gaussian Mixture Models)
+* 🤖 Automated Patient Risk Stratification
 * 📱 Mobile-Friendly Dashboard
-* ☁️ Cloud Deployment Support
-* 📊 Real-Time Hospital Analytics
+* ☁️ Cloud-Native Healthcare Analytics Platform
+* 📈 Real-Time Hospital Monitoring
 * 🧬 Disease Progression Forecasting
-
 ---
 
 # 👨‍💻 Author
